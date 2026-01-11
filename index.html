@@ -158,7 +158,12 @@
     }
 
     /* --- Typography & Hierarchy --- */
-    h1, h2, h3, h4 { color: var(--heading-color); font-weight: 700; letter-spacing: -0.015em; }
+    h1, h2, h3, h4 { 
+        color: var(--heading-color); 
+        font-weight: 700; 
+        letter-spacing: -0.015em; 
+        scroll-margin-top: calc(var(--nav-height) + 24px); /* Fix for sticky nav occlusion */
+    }
     
     h1 {
         font-size: 2.4rem;
